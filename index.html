@@ -2,66 +2,72 @@
 <html>
   <head>
     <title>MY Page</title>
-    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
-    <meta content='phonegamedever9012' name='author' />  
-    <style type="text/css">
-      html,body,div,span,p,a,img,strong{margin:0 auto;padding:0;border:0;outline:0;vertical-align:baseline;}
-      body{line-height:1;color:black;background:white;}
-      a img{border:none;}
-      body{font-family:'Ubuntu',arial,sans-serif;text-align:center;font-size:16px;color:#111;}
-      strong{font-weight:bold;}
-      p{line-height:1.5em;text-align:justify;margin-bottom:20px;}
-      p.copyright{margin-bottom:10px;}
-      a{color:#a00;text-decoration:none;}
-      a:hover {border-bottom:2px solid #a00;}
-      .clear{clear:both;}
-      hr.border{border:2px solid #a00;margin:0px;color:#a00;background:#a00;}
-      hr.bottom{position:fixed;bottom:0px;width:100%;}
-      .picture{-webkit-box-shadow:0px 1px 4px #666;-moz-box-shadow:0px 1px 4px #666;box-shadow:0px 1px 4px #666;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;background-color:white;margin:30px 0px 30px 0px;padding:10px 10px 30px;clear:both;}
-      
-	  #content{width:1000px;}
-      #aboutme{font-size:32px;}
-      #online{padding:30px 0px 30px 0px;}
-      #online a{-webkit-border-radius:25px;-moz-border-radius:25px;border-radius:25px;margin-right:5px;border:1px solid;position:relative;font-size:13px;-webkit-box-shadow:0px 1px 4px #666;-moz-box-shadow:0px 1px 4px #666;box-shadow:0px 1px 4px #666;text-shadow:0 0 2px #666;padding:10px 0px;color:white;}
-      #online a:active{top:4px;}
-      #online a span{padding:2px 11px 2px 35px;}
-
-      #footer{padding-top:10px;}
-      #footer p{text-align:center;}
-      #footer p.credits{font-size:10px;}
-    </style>
-	
+    <meta content='text/html; charset=UTF-8'/> 	
+		
 	<style>
 		body {
 			background-image: url("bg_2.jpg");
 		} 
-
-	</style>
-	
-	
+	</style>		
   </head>
+  
+  
   <body>
-    <hr class="border" />
-    <div id="content">
+	<div id="header" >
+		<h1 style="text-align: center" >WELCOME</h1>
+	</div>
+	
+	 <hr style="height:5px;border:none;border-top:5px ridge green;" />
+ 
 
-      <div class="clear"></div>
+	<div id="aboutme1" style="position:relative;text-align:center;">
 
-      <div id="aboutme">
+		<p>Hello! I'm <strong>phonegamedever9012</strong>,this is my personal website.</p>
+		<p>You can click the button below to download the game</p>
+		
 
-        <p>Hello! I'm <strong>phonegamedever9012</strong>,this is my personal website.</p>
-		<p>Glad to have you here. You can reach me in the following ways:</p>
+		<input 
+			  accept="middle"
+			  type="image" 
+			  src="/icon/down_icon2.jpg"
+			  alt="DOWNLOAD"
+			  onclick = "downfile()"
+			  />		
+		
+		<script>
+			function downfile(){
+				var url = "/apk/chinaversion.apk";
+				window.location.href = url;
+		}
+		</script>
+	</div>
+	
+	
+	<div id="aboutme2">
+	<style type="text/css">
+	
+		#aboutme2 {
 
-		<p>Email: phonegamedever9012@gmail.com</p>
-      </div>
-      <div class="clear"></div> 
+			position:absolute;
 
-      <div id="footer">
-        <p class="copyright"></p>
-       
-      </div>
-      <div class="clear"></div>
-    </div>
-    <hr class="border bottom" />
+			left:20%;
+
+			bottom:10px;
+
+			text-align :center;
+
+		}
+		</style>		
+		<p style="font-size:30px;color:red">Glad to have you here. You can reach me in the following ways:</p>
+
+		<p style="font-size:30px;color:red">Email: phonegamedever9012@gmail.com</p>
+	</div>
+	
+
   </body>
+  
+  
 </html>
+
+
 
